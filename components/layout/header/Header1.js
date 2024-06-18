@@ -38,7 +38,8 @@ export default function Header1({
           <div id="site-header-inner">
             <div className="header__logo">
               <Link href="/">
-                <img src="assets/images/logo/logo.png" alt="" />
+              <h4 className="background-color:purple" >BANKABLE</h4>
+                {/* <img src="assets/images/logo/bankLogo.png" alt="" /> */}
               </Link>
             </div>
             {isMobile ? <MobileMenu isMobileMenu={isMobileMenu} /> : <Menu />}

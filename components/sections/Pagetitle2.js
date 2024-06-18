@@ -48,7 +48,10 @@ export default function Pagetitle2() {
                   alt=""
                 />
                 <div className="overlay">
-                  <img src="/assets/images//backgroup/bg-slider2.png" alt="" />
+                  <img
+                    src="/assets/images/bankablePictures/startshipBat.jpg"
+                    alt=""
+                  />
                 </div>
                 <div className="container">
                   <div className="row">
@@ -56,12 +59,13 @@ export default function Pagetitle2() {
                       <div className="box-slider">
                         <div className="content-box">
                           <h1 className="title">
-                            Pagetitle2 an early investor in the top Blockchain
-                            Games, NFTs and Metaverses
+                            NFTs from ypur DVDs and Video tapes
                           </h1>
                           <p className="sub-title">
-                            Risebot is the leading blockchain gaming launchpad
-                            with over 50 projects launched and the{' '}
+                            Bankable an early Movies project in the top
+                            Blockchain to create NFTs from DVDs and Video
+                            tapes.We'll leading blockchain gaming launchpad with
+                            over 50 projects launched and the{' '}
                             <br className="show-destop" />
                             highest average ROI in the industry
                           </p>
@@ -80,7 +84,10 @@ export default function Pagetitle2() {
             <SwiperSlide>
               <div className="slider-st2">
                 <div className="overlay">
-                  <img src="/assets/images//backgroup/bg-slider2.png" alt="" />
+                  <img
+                    src="/assets/images/bankablePictures/bg-slider2.png"
+                    alt=""
+                  />
                 </div>
                 <div className="container">
                   <div className="row">

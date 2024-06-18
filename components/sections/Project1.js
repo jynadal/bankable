@@ -32,8 +32,7 @@ export default function Project1() {
                 data-aos-duration={800}
               >
                 <h2 className="title">
-                  Project1 iGO projects <br className="show-destop" /> coming
-                  soon
+                  Come and be part of this adventure <br className="show-destop" /> Three steps
                 </h2>
               </div>
             </div>
@@ -130,7 +129,7 @@ export default function Project1() {
                     <Swiper {...swiperOptions} className="swiper-wrapper">
                       <SwiperSlide>
                         <img
-                          src="/assets/images/slider/img_slider_1.jpg"
+                          src="/assets/images/bankablePictures/titanicDi.jpg"
                           alt=""
                         />
                       </SwiperSlide>
@@ -189,7 +188,7 @@ export default function Project1() {
                     <Swiper {...swiperOptions} className="swiper-wrapper">
                       <SwiperSlide>
                         <img
-                          src="/assets/images/slider/img_slider_1.jpg"
+                          src="/assets/images/bankablePictures/badboyRideOrDie.jpeg"
                           alt=""
                         />
                       </SwiperSlide>
@@ -241,7 +240,7 @@ export default function Project1() {
                     <Swiper {...swiperOptions} className="swiper-wrapper">
                       <SwiperSlide>
                         <img
-                          src="/assets/images/slider/img_slider_1.jpg"
+                          src="/assets/images/bankablePictures/TitanicDiWins.jpg"
                           alt=""
                         />
                       </SwiperSlide>

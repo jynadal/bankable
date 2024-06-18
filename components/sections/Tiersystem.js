@@ -28,7 +28,10 @@ export default function Tiersystem() {
                   <h6>Cars</h6>
                 </div>
                 <div className="image">
-                  <img src="/assets/images/common/project_17.png" alt="" />
+                  <img
+                    src="/assets/images/bankablePictures/OceansEleven1.png"
+                    alt=""
+                  />
                 </div>
                 <div className="content">
                   <h6 className="name">
@@ -73,11 +76,16 @@ export default function Tiersystem() {
                   <h6>Ocean's 11</h6>
                 </div>
                 <div className="image">
-                  <img src="/assets/images/common/project_17.png" alt="" />
+                  <img
+                    src="/assets/images/bankablePictures/Titanic1.png"
+                    alt=""
+                  />
                 </div>
                 <div className="content">
                   <h6 className="name">
-                    <Link href="/project-details.">Limited Edit.</Link>
+                    <Link href="/project-list/oceans-eleven">
+                      Limited Edit.
+                    </Link>
                   </h6>
                   <ul>
                     {/* <li className="box bg_style">
@@ -118,7 +126,10 @@ export default function Tiersystem() {
                   <h6>Titanic</h6>
                 </div>
                 <div className="image">
-                  <img src="/assets/images/common/project_17.png" alt="" />
+                  <img
+                    src="/assets/images/bankablePictures/OceansEleven2.png"
+                    alt=""
+                  />
                 </div>
                 <div className="content">
                   <h6 className="name">
@@ -163,11 +174,14 @@ export default function Tiersystem() {
                   <h6>Men In Black</h6>
                 </div>
                 <div className="image">
-                  <img src="/assets/images/common/project_17.png" alt="" />
+                  <img
+                    src="/assets/images/bankablePictures/Titanic2.png"
+                    alt=""
+                  />
                 </div>
                 <div className="content">
                   <h6 className="name">
-                    <Link href="/project-details.">Limited Edit.</Link>
+                    <Link href="project-list/Ocean11">Limited Edit.</Link>
                   </h6>
                   <ul>
                     {/* <li className="box bg_style">
@@ -189,7 +203,10 @@ export default function Tiersystem() {
                   </ul>
                 </div>
                 <div className="wrapper_button">
-                  <Link href="/project-details." className="tf-button style1">
+                  <Link
+                    href="/project-list/Titanic2"
+                    className="tf-button style1"
+                  >
                     <span>get started</span>
                   </Link>
                 </div>
@@ -209,7 +226,7 @@ export default function Tiersystem() {
                   <h6>Tiers #2</h6>
                 </div>
                 <div className="image">
-                  <img src="/assets/images/common/project_18.png" alt="" />
+                  <img src="/assets/images/bankablePictures/OceansEleven4.png" alt="" />
                 </div>
                 <div className="content">
                   <h6 className="name">

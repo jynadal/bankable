@@ -145,7 +145,7 @@ export default function MyMovies() {
                           </div>
                         </div>
                         <h5 className="heading">
-                          <Link href="/project-details">Angry Birds 2</Link>
+                          <Link href="cars">Angry Birds 2</Link>
                         </h5>
                       </div>
                       <div className="content">
@@ -252,7 +252,7 @@ export default function MyMovies() {
                           </div>
                         </div>
                         <h5 className="heading">
-                          <Link href="/project-details">
+                          <Link href="titanic">
                             AFK summoner fantasy hero war
                           </Link>
                         </h5>
@@ -361,7 +361,7 @@ export default function MyMovies() {
                           </div>
                         </div>
                         <h5 className="heading">
-                          <Link href="/project-details">Soul Knight</Link>
+                          <Link href="badboys">Soul Knight</Link>
                         </h5>
                       </div>
                       <div className="content">
@@ -468,7 +468,7 @@ export default function MyMovies() {
                           </div>
                         </div>
                         <h5 className="heading">
-                          <Link href="/project-details">
+                          <Link href="oceanseleven">
                             Modern Combat 5: mobile FPS
                           </Link>
                         </h5>
@@ -577,7 +577,7 @@ export default function MyMovies() {
                           </div>
                         </div>
                         <h5 className="heading">
-                          <Link href="/project-details">
+                          <Link href="badboys2">
                             Shadow of Death: Dark Knight
                           </Link>
                         </h5>
@@ -686,7 +686,7 @@ export default function MyMovies() {
                           </div>
                         </div>
                         <h5 className="heading">
-                          <Link href="/project-details">Grimvalor</Link>
+                          <Link href="maninblack">Grimvalor</Link>
                         </h5>
                       </div>
                       <div className="content">
@@ -793,7 +793,7 @@ export default function MyMovies() {
                           </div>
                         </div>
                         <h5 className="heading">
-                          <Link href="/project-details">Honkai Impact 3</Link>
+                          <Link href="badboys2">Honkai Impact 3</Link>
                         </h5>
                       </div>
                       <div className="content">
@@ -884,7 +884,7 @@ export default function MyMovies() {
                 </div>
                 <div className="col-md-12">
                   <div className="wrap-btn justify-content-center mt30">
-                    <Link href="/project-details" className="tf-button style1">
+                    <Link href="badboys3" className="tf-button style1">
                       Show more
                     </Link>
                   </div>
