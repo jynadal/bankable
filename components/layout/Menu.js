@@ -129,15 +129,14 @@ export default function Menu() {
         </li>
         <li
           className={`menu-item menu-item-has-children ${checkParentActive([
-            '/blog-grid',
-            '/blog-list',
+            '/blog',
             '/blog-details',
           ])}`}
         >
           <Link href="#">Blog</Link>
           <ul className="sub-menu">
             <li className={`menu-item ${checkCurrentMenuItem('/blog-grid')}`}>
-              <Link href="/blog-grid">Blog Grid</Link>
+              <Link href="/blog">Blog</Link>
             </li>
             <li
               className={`menu-item ${checkCurrentMenuItem('/blog-details')}`}
