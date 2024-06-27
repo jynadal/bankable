@@ -1,9 +1,18 @@
 import Layout from '@/components/layout/Layout';
 import Link from 'next/link';
-export default function BlogDetails({ params: {blogId}}) {
+import Image from 'next/image';
+import { getSingleArticle } from '../helpers';
+
+export default async function BlogDetails({ searchParams }) {
+  const _idArticle = searchParams?._id;
+  const _id = Number(_idArticle);
+  const itemA = await getSingleArticle(_id);
+
+  const article = itemA.props.singleArticle;
+
   return (
     <>
-      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle={blogId}>
+      <Layout headerStyle={1} footerStyle={1} breadcrumbTitle={article.title}>
         <div>
           <section className="tf-section tf-blog pt60">
             <div className="container">
@@ -11,8 +20,7 @@ export default function BlogDetails({ params: {blogId}}) {
                 <div className="side-bar">
                   <div className="post-details">
                     <h4 className="title">
-                      Meta unveils its much-hyped Quest Pro mixed reality
-                      headset at Meta Connect 2022, priced at $1,500
+                      {article.title} Details from blog-details / page.jsx
                     </h4>
                     <p className="date mb18">
                       <svg
@@ -32,7 +40,7 @@ export default function BlogDetails({ params: {blogId}}) {
                           />
                         </g>
                       </svg>
-                      February 18, 2022
+                      {article.price}, {article.previousPrice}
                     </p>
                     <div className="spacing" />
                     <div className="content-inner">
@@ -96,81 +104,25 @@ export default function BlogDetails({ params: {blogId}}) {
                       </ul>
                       <div className="content-post">
                         <p className="sub-title">
-                          The launch is an important step for Zuckerberg, who
-                          last year announced plans for the device - then called
-                          Project Cambria - at the same time that he changed his
-                          company's name from Facebook to Meta to signal his
-                          intention to refocus the social media giant into a
-                          company that operates a shared immersive computing
-                          experience known as the metaverse.
+                          {article.title} {article.title} {article.title}
                         </p>
                         <div className="image">
-                          <img src="/assets/images/post/post_25.png" alt="" />
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit
-                          </p>
+                          <Image
+                            src={article?.image}
+                            alt=""
+                            width={500}
+                            height={500}
+                          />
+                          <p>Details from blog-details / page.jsx</p>
                         </div>
+                        <p>{article.description}</p>
                         <p>
-                          Meta Platforms unveiled its Quest Pro virtual and
-                          mixed reality headset on Tuesday, marking a milestone
-                          for Chief Executive Mark Zuckerberg's break into the
-                          higher-end market for extended reality computing
-                          devices.
+                          {article.title} {article.description}
                         </p>
-                        <p>
-                          The new headset, unveiled at Meta's annual Connect
-                          conference, will hit shelves on Oct 25 at a price of
-                          $1,500, and will offer consumers a way to interact
-                          with virtual creations overlaid onto a full-color view
-                          of the physical world around them.
-                        </p>
-                        <p>
-                          The launch is an important step for Zuckerberg, who
-                          last year announced plans for the device - then called
-                          Project Cambria - at the same time that he changed his
-                          company's name from Facebook to Meta to signal his
-                          intention to refocus the social media giant into a
-                          company that operates a shared immersive computing
-                          experience known as the metaverse.
-                        </p>
-                        <p>
-                          Zuckerberg has since poured billions of dollars into
-                          that vision. Reality Labs, the Meta unit responsible
-                          for bringing the metaverse to life, lost $10.2 billion
-                          in 2021 and has lost nearly $6 billion so far this
-                          year.
-                        </p>
-                        <p>
-                          The Quest Pro features several upgrades over Meta's
-                          existing Quest 2 headset, which overwhelmingly
-                          dominates the consumer virtual reality market.
-                        </p>
-                        <p>
-                          Most strikingly, it has outward-facing cameras that
-                          capture a sort of 3D livestream of the physical
-                          environment around a wearer, enabling mixed reality
-                          novelties like the ability to hang a virtual painting
-                          on a real-world wall or have a virtual ball bounce off
-                          a real table.
-                        </p>
-                        <p>
-                          The Quest 2, by contrast, offers a more rudimentary
-                          grayscale version of this technology, called
-                          passthrough.
-                        </p>
-                        <p>
-                          The Quest Pro is lighter and slimmer than its
-                          predecessors, with thin pancake lenses and a relocated
-                          battery that sits at the back of the headset,
-                          distributing its weight more evenly while reducing
-                          overall bulk.
-                        </p>
+
                         <p className="mb28">
-                          For fully immersive virtual reality, Meta has added
-                          tracking sensors to the Quest Pro that can replicate
-                          users' eye movements and facial expressions, creating
-                          a sense that avatars are making eye contact.
+                          {article.title} {article.description} {article.title}
+                          {article.title} {article.description}
                         </p>
                         <h5 className="title-st">Pitching productivity</h5>
                         <p>
@@ -179,69 +131,34 @@ export default function BlogDetails({ params: {blogId}}) {
                           creative professionals.
                         </p>
                         <p>
-                          In addition to offering its own Horizon social and
-                          workspace platforms, the company has also made virtual
-                          versions of Microsoft work products like Word, Outlook
-                          and Teams available.
+                          {article.title} {article.description} {article.title}{' '}
+                          {article.title} {article.description}
                         </p>
                         <p>
-                          At a preview of the device days before its launch,
-                          Meta gave reporters a glimpse of the type of user it
-                          had in mind by showcasing apps like Tribe XR, a
-                          virtual training environment for DJs learning how to
-                          use complex equipment.
+                          {article.title} {article.description} {article.title}{' '}
+                          {article.title} {article.description}
                         </p>
                         <div className="image mb12">
-                          <img src="/assets/images/post/post_29.png" alt="" />
+                          <img src={article?.image} alt="" />
                           <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit
                           </p>
                         </div>
                         <p>
-                          Tribe XR is already available in virtual reality, but
-                          a demonstration showed how passthrough technology may
-                          enable DJs to use the app to play real-world gigs, as
-                          it means they can look out past their virtual
-                          equipment at actual partygoers.
+                          {article.title} {article.description} {article.title}{' '}
+                          {article.title} {article.description}
                         </p>
                         <p>
-                          Meta plans to sell the Quest Pro in consumer channels
-                          to start, while adding enterprise-level capabilities
-                          like mobile device management, authentication and
-                          premium support services next year, executives said at
-                          the press event.
-                        </p>
-                        <p>
-                          They said the device is intended to complement rather
-                          than replace the entry-level Quest 2, which sells for
-                          $399.99.
-                        </p>
-                        <p>
-                          For now, that means the Quest Pro stops short of
-                          enabling the complex commercial applications Meta has
-                          suggested it wants its metaverse tech to support.
-                        </p>
-                        <p>
-                          The company is still working on a mixed reality
-                          experience for its Horizon Workrooms app that would
-                          make a person's avatar appear to be present in a
-                          real-world conference room with other users, which it
-                          is calling Magic Rooms.
-                        </p>
-                        <p>
-                          Still, the Quest Pro's price point puts it well under
-                          the cost of existing enterprise-focused devices like
-                          Microsoft's Hololens 2, which was released for
-                          commercial use in 2019 and is already present in
-                          operating rooms and on factory floors.
+                          {article.title} {article.description} {article.title}{' '}
+                          {article.title} {article.description}
                         </p>
                         <p>An entry-level Hololens 2 sells for $3,500.</p>
                         <div className="spacing mg28" />
                         <ul className="tag mb30">
                           <li>Tags:</li>
                           <li>
-                            <span>nfts</span>
+                            <span> {article.brand}</span>
                           </li>
                           <li>
                             <span>crypto</span>

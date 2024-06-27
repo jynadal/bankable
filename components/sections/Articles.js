@@ -31,7 +31,7 @@ export const Articles = ({ articles }) => {
               </p>
             </div>
             <Link
-              href={{ pathname: '/blog', query: { _id: article?._id } }}
+              href={{ pathname: '/blog-details', query: { _id: article?._id } }}
               className="tf-button style1"
             >
               Read more

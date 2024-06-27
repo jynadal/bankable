@@ -1,5 +1,7 @@
 import Layout from '@/components/layout/Layout';
+//import Card from '@/components/sections/ProfilCard';
 import Link from 'next/link';
+
 export default function ProjectDetails({ params }) {
   return (
     <>
@@ -286,7 +288,7 @@ export default function ProjectDetails({ params }) {
                             </defs>
                           </svg>
                         </div>
-                        <p>This IDO requires KYC verification.</p>
+                        <p>Project Detail from with PARAMS.</p>
                       </div>
                       <div className="boder-st" />
                       <div className="total">

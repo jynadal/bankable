@@ -122,7 +122,7 @@ export default function Team2() {
                   </div>
                   <div className="content">
                     <h5 className="name">
-                      <Link href="/team-details">Augustin Nelson</Link>
+                      <Link href="/team-details">Antonin Nelson</Link>
                     </h5>
                     <p className="position">Co-fonder & Specialist Defi</p>
                     <ul className="social">

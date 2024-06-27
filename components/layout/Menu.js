@@ -117,41 +117,44 @@ export default function Menu() {
         </li> */}
 
         <li className={`menu-item ${checkCurrentMenuItem('/my-movies')}`}>
-          <Link href="/my-movies">My Movies</Link>
+          <Link href="/my-movies">My Profil</Link>
         </li>
 
+        <li
+          className={`menu-item menu-item-has-children ${checkParentActive([
+            '/blog',
+            '/blog',
+          ])}`}
+        >
+          <Link href="#">Services</Link>
+          <ul className="sub-menu">
+            <li className={`menu-item ${checkCurrentMenuItem('/blog-grid')}`}>
+              <Link href="/expedition">Expédier media</Link>
+            </li>
+            <li className={`menu-item ${checkCurrentMenuItem('/blog-grid')}`}>
+              <Link href="/provider">Stockage</Link>
+            </li>
+            {/* <li
+              className={`menu-item ${checkCurrentMenuItem('/blog-details')}`}
+            >
+              <Link href="/blog-details">Blog Detail</Link>
+            </li> */}
+          </ul>
+        </li>
         <li
           className={`menu-item ${
             pathname === '/roadmap' ? 'current-menu-item' : ''
           }`}
         >
-          <Link href="/dashboard">Dashboard</Link>
+          <Link href="/blog">Blog</Link>
         </li>
-        <li
-          className={`menu-item menu-item-has-children ${checkParentActive([
-            '/blog',
-            '/blog-details',
-          ])}`}
-        >
-          <Link href="#">Blog</Link>
-          <ul className="sub-menu">
-            <li className={`menu-item ${checkCurrentMenuItem('/blog-grid')}`}>
-              <Link href="/blog">Blog</Link>
-            </li>
-            <li
-              className={`menu-item ${checkCurrentMenuItem('/blog-details')}`}
-            >
-              <Link href="/blog-details">Blog Detail</Link>
-            </li>
-          </ul>
-        </li>
-        <li
+        {/* <li
           className={`menu-item ${
             pathname === '/contact' ? 'current-menu-item' : ''
           }`}
         >
           <Link href="/contact">Contact</Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
