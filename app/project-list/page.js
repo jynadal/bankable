@@ -27,13 +27,13 @@ export default function ProjectList() {
                           className={activeIndex === 1 ? 'active' : ''}
                           onClick={() => handleOnClick(1)}
                         >
-                          <span>Open IGO</span>
+                          <span>Friends</span>
                         </li>
                         <li
                           className={activeIndex === 2 ? 'active' : ''}
                           onClick={() => handleOnClick(2)}
                         >
-                          <span>Upcoming</span>
+                          <span>Followed</span>
                         </li>
                         <li
                           className={activeIndex === 3 ? 'active' : ''}

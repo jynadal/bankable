@@ -1,0 +1,3 @@
+Users /my-profil
+    Créer une fonction de publication d'historique des transactions de la marketplace sur le feed dans la page profil.
+    Intégrer les ordres de publication par priorité selon les favories et films possédés de Users.

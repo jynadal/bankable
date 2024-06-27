@@ -1,5 +1,7 @@
 import Layout from '@/components/layout/Layout';
 import Card from '@/components/sections/ProfilCard';
+import ProfilList from '@/components/sections/ProfilList';
+
 import Link from 'next/link';
 
 export default function MyProfil({ params }) {
@@ -15,6 +17,7 @@ export default function MyProfil({ params }) {
             <div className="container">
               <div className="row">
                 <Card />
+                <ProfilList />
 
                 <div
                   className="sidebar"
