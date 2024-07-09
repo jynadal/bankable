@@ -3,6 +3,13 @@ import Link from 'next/link';
 import { Articles } from '@/components/sections/Articles';
 //import data from '../data/blogArticles';
 
+import { getLocalData } from '../data/apiFetch';
+
+// import useSWR from 'swr';
+
+// Write a fetcher function to wrap the native fetch function and return the result of a call to the URL in JSON format
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
 const getArticlesData = async () => {
   const res = await fetch('https://jsonserver.reactbd.com/amazonpro');
   if (!res.ok) {
@@ -11,7 +18,30 @@ const getArticlesData = async () => {
   return res.json();
 };
 
+// export async function getStaticProps() {
+//   const res = await fetch('http://localhost:3000/api/articles');
+//   const articles = await res.json();
+//   //const localData = await getLocalData();
+//   return {
+//     props: { articles },
+//   };
+// }
+
 export default async function BlogGrid() {
+  // Set up SWR to run the fetcher function when calling "/api/staticdata"
+  // There are 3 possible states: (1) "loading" when data is null (2) "ready" when the data is returned (3) "error" when there was an error fetching the data
+
+  //   const { articles, error } = useSWR(
+  //     'http://localhost:3000/app/data/apiFetch/staticdata',
+  //     fetcher
+  //   );
+
+  //   // Handle the error state
+  //   if (error) return <div>Failed to load</div>;
+  //   // Handle the loading state
+  //   if (!articles) return <div>Loading...</div>;
+  //   // Handle the ready state and display the result contained in the data object
+
   const articles = await getArticlesData();
   return (
     <>
@@ -21,32 +51,6 @@ export default async function BlogGrid() {
             <div className="container">
               <div className="row">
                 <Articles articles={articles} />
-
-                <div className="col-lg-4 col-md-12">
-                  <div className="grid-box">
-                    <div className="image">
-                      <img src="/assets/images/post/post_1.jpg" alt="" />
-                    </div>
-                    <div className="content">
-                      <Link href="/blog-details" className="tag">
-                        Metaverse
-                      </Link>
-                      <h5 className="title">
-                        <Link href="/blog-details">
-                          Decoded: Metaverse and the future of banking
-                        </Link>
-                      </h5>
-                      <p>
-                        The metaverse can help the healthcare fraternity by
-                        providing trainings on understanding medical tools
-                        and...
-                      </p>
-                    </div>
-                    <Link href="/blog-details" className="tf-button style1">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
 
                 <div className="col-md-12">
                   <ul
@@ -108,6 +112,7 @@ export default async function BlogGrid() {
               </div>
             </div>
           </section>
+
           <section className="tf-section tf_CTA">
             <div className="container relative">
               <div className="overlay"></div>

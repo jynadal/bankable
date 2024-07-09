@@ -62,7 +62,7 @@ const Card = () => {
 
             <div className="boder-st" />
             <div className="total">
-              <p className="active">Movies owned = 7 NFTs</p>
+              <p className="active">Movies owned = 6 NFTs</p>
               <p>Off chain = 50 Films</p>
             </div>
             <div className="boder-st" />

@@ -22,6 +22,10 @@ export default function Menu() {
   return (
     <nav id="main-nav" className="main-nav">
       <ul id="menu-primary-menu" className="menu">
+        <li className={`menu-item ${checkCurrentMenuItem('/my-profil')}`}>
+          <Link href="/my-profil">My Profil</Link>
+        </li>
+
         <li
           className={`menu-item menu-item-has-children ${checkParentActive([
             '/primary-market',
@@ -115,10 +119,6 @@ export default function Menu() {
             </li>
           </ul>
         </li> */}
-
-        <li className={`menu-item ${checkCurrentMenuItem('/my-movies')}`}>
-          <Link href="/my-movies">My Profil</Link>
-        </li>
 
         <li
           className={`menu-item menu-item-has-children ${checkParentActive([

@@ -2,6 +2,7 @@
 import Layout from '@/components/layout/Layout';
 import Link from 'next/link';
 import { useState } from 'react';
+
 export default function PrimaryMarket() {
   const [activeIndex, setActiveIndex] = useState(1);
   const handleOnClick = (index) => {
@@ -26,19 +27,19 @@ export default function PrimaryMarket() {
                           className={activeIndex === 1 ? 'active' : ''}
                           onClick={() => handleOnClick(1)}
                         >
-                          <span>Open IGO</span>
+                          <span>Primary</span>
                         </li>
                         <li
                           className={activeIndex === 2 ? 'active' : ''}
                           onClick={() => handleOnClick(2)}
                         >
-                          <span>Upcoming</span>
+                          <span>Secondary</span>
                         </li>
                         <li
                           className={activeIndex === 3 ? 'active' : ''}
                           onClick={() => handleOnClick(3)}
                         >
-                          <span>Past IGO</span>
+                          <span>For You</span>
                         </li>
                       </ul>
                       <div
@@ -62,14 +63,14 @@ export default function PrimaryMarket() {
                               data-toggle="modal"
                               data-target="#delete_client"
                             >
-                              Forgotten Samurai
+                              Auctions
                             </li>
                             <li
                               className="dropdown-item"
                               data-toggle="modal"
                               data-target="#edit_client"
                             >
-                              Star Batter
+                              Direct Selling
                             </li>
                             <li
                               className="dropdown-item"
@@ -80,6 +81,7 @@ export default function PrimaryMarket() {
                             </li>
                           </ul>
                         </div>
+
                         <div className="dropdown selector-drop" id="artworks">
                           <Link
                             href="#"
@@ -116,6 +118,7 @@ export default function PrimaryMarket() {
                         </div>
                       </div>
                     </div>
+
                     <div className="content-tab mt40">
                       <div
                         className="content-inner project-box-style6_wrapper"
@@ -138,9 +141,10 @@ export default function PrimaryMarket() {
                             </div>
                             <div className="label">1ST Phase</div>
                           </div>
+
                           <div className="content">
                             <h5 className="heading">
-                              <Link href="/project-details">She Sees Red</Link>
+                              <Link href="/project-details">I Robot</Link>
                             </h5>
                             <p className="desc">
                               Ookeenga is the no.1 Vertical Multiplayer Real
@@ -148,20 +152,21 @@ export default function PrimaryMarket() {
                             </p>
                             <ul>
                               <li>
-                                <p className="text">Min allocation</p>
-                                <p className="price">0.01</p>
+                                <p className="text">Matics</p>
+                                <p className="price">6</p>
                               </li>
                               <li>
-                                <p className="text">Maximum</p>
-                                <p className="price">TBA</p>
+                                <p className="text">Movie</p>
+                                <p className="price">46/100</p>
                               </li>
                               <li>
-                                <p className="text">Access</p>
-                                <p className="price">Public</p>
+                                <p className="text">Selling Process</p>
+                                <p className="price">Auction</p>
                               </li>
                             </ul>
                           </div>
                         </div>
+                        
                         <div className="project-box-style4">
                           <div className="image">
                             <div className="img_inner">
@@ -180,7 +185,7 @@ export default function PrimaryMarket() {
                           <div className="content">
                             <h5 className="heading">
                               <Link href="/project-details">
-                                Sky: Children of the Light
+                                Ocean's 11
                               </Link>
                             </h5>
                             <p className="desc">
@@ -189,16 +194,16 @@ export default function PrimaryMarket() {
                             </p>
                             <ul>
                               <li>
-                                <p className="text">Min allocation</p>
-                                <p className="price">0.01</p>
+                                <p className="text">Matics</p>
+                                <p className="price">10</p>
                               </li>
                               <li>
-                                <p className="text">Maximum</p>
-                                <p className="price">TBA</p>
+                                <p className="text">Movie</p>
+                                <p className="price">6/100</p>
                               </li>
                               <li>
-                                <p className="text">Access</p>
-                                <p className="price">Public</p>
+                                <p className="text">Selling Process</p>
+                                <p className="price" >- </p>
                               </li>
                             </ul>
                           </div>
@@ -1591,8 +1596,10 @@ export default function PrimaryMarket() {
                         </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
+
                 <div className="col-md-12">
                   <ul
                     className="panigation mt6"

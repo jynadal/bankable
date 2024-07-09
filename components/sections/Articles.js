@@ -10,12 +10,7 @@ export const Articles = ({ articles }) => {
         <div key={article._id} className="col-lg-4 col-md-12">
           <div className="grid-box">
             <div className="image">
-              <Image
-                src="/assets/images/post/post_1.jpg"
-                width={300}
-                height={200}
-                alt=""
-              />
+              <Image src={article.image} width={300} height={200} alt="" />
             </div>
             <div className="content">
               <Link href={article.category} className="tag">
