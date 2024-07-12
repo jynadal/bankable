@@ -25,37 +25,36 @@ export default function ProjectList() {
                 >
                   <div className="wrapper_menutab">
                     <ul className="menu-tab wrapper">
-                    
                       <li
                         className={activeIndex === 1 ? 'active' : ''}
                         onClick={() => handleOnClick(1)}
                       >
                         <span>Feeds</span>
                       </li>
-                          <li
+                      <li
                         className={activeIndex === 2 ? 'active' : ''}
-                        onClick={() => handleOnClick(4)}
+                        onClick={() => handleOnClick(2)}
                       >
                         <span>All Movies</span>
                       </li>
 
                       <li
                         className={activeIndex === 3 ? 'active' : ''}
-                        onClick={() => handleOnClick(5)}
+                        onClick={() => handleOnClick(3)}
                       >
                         <span>Badges Level</span>
                       </li>
 
-                     <li
+                      <li
                         className={activeIndex === 4 ? 'active' : ''}
-                        onClick={() => handleOnClick(2)}
+                        onClick={() => handleOnClick(4)}
                       >
                         <span>Transaction History</span>
                       </li>
 
                       <li
                         className={activeIndex === 5 ? 'active' : ''}
-                        onClick={() => handleOnClick(3)}
+                        onClick={() => handleOnClick(5)}
                       >
                         <span>WishList</span>
                       </li>
@@ -134,7 +133,6 @@ export default function ProjectList() {
                         </ul>
                       </div>
                     </div> */}
-
                   </div>
 
                   <div className="content-tab mt40">
@@ -1329,7 +1327,7 @@ export default function ProjectList() {
                     <div
                       className="content-inner project-box-style3_wrapper"
                       style={{
-                        display: `${activeIndex == 2 ? 'block' : 'none'}`,
+                        display: `${activeIndex == 4 ? 'block' : 'none'}`,
                       }}
                     >
                       <div
@@ -2046,11 +2044,33 @@ export default function ProjectList() {
                     </div>
                     {/* END My Transaction History */}
 
-                    {/* My WishList */}
+                    {/* All My Movies */}
+                    <div
+                      className="content-inner project-box-style3_wrapper"
+                      style={{
+                        display: `${activeIndex == 2 ? 'block' : 'none'}`,
+                      }}
+                    >
+                      <AllMyMovies />
+                    </div>
+                    {/* END All Movies */}
+
+                    {/* My Badges  */}
                     <div
                       className="content-inner project-box-style3_wrapper"
                       style={{
                         display: `${activeIndex == 3 ? 'block' : 'none'}`,
+                      }}
+                    >
+                      <Badges />
+                    </div>
+                    {/* END My Badges */}
+
+                    {/* My WishList */}
+                    <div
+                      className="content-inner project-box-style3_wrapper"
+                      style={{
+                        display: `${activeIndex == 5 ? 'block' : 'none'}`,
                       }}
                     >
                       <div
@@ -2233,28 +2253,6 @@ export default function ProjectList() {
                       </div>
                     </div>
                     {/* END My WishList */}
-
-                    {/* All My Movies */}
-                    <div
-                      className="content-inner project-box-style3_wrapper"
-                      style={{
-                        display: `${activeIndex == 4 ? 'block' : 'none'}`,
-                      }}
-                    >
-                      <AllMyMovies />
-                    </div>
-                    {/* END All Movies */}
-
-                    {/* My Badges  */}
-                    <div
-                      className="content-inner project-box-style3_wrapper"
-                      style={{
-                        display: `${activeIndex == 5 ? 'block' : 'none'}`,
-                      }}
-                    >
-                      <Badges />
-                    </div>
-                    {/* END My Badges */}
                   </div>
                 </div>
               </div>

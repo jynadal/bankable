@@ -51,64 +51,6 @@ export default async function BlogGrid() {
             <div className="container">
               <div className="row">
                 <Articles articles={articles} />
-
-                <div className="col-md-12">
-                  <ul
-                    className="panigation"
-                    data-aos="fade-up"
-                    data-aos-duration={800}
-                  >
-                    <li>
-                      <Link href="#">
-                        <svg
-                          width={8}
-                          height={12}
-                          viewBox="0 0 8 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M6.5 1L1.5 6L6.5 11"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="active">
-                        1
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">2</Link>
-                    </li>
-                    <li>
-                      <Link href="#">3</Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <svg
-                          width={8}
-                          height={12}
-                          viewBox="0 0 8 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1.5 1L6.5 6L1.5 11"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
           </section>

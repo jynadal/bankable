@@ -1,19 +1,19 @@
 import Layout from '@/components/layout/Layout';
 import Pagetitle2 from '@/components/sections/Pagetitle2';
 import Project1 from '@/components/sections/Project1';
-import Feature2 from '@/components/sections/Feature2';
-import Cta21 from '@/components/sections/Cta21';
-import Cta3 from '@/components/sections/Cta3';
+import Feature from '@/components/sections/Feature';
+import Cta from '@/components/sections/Cta';
+import Cta2 from '@/components/sections/Cta2';
 import Partner2 from '@/components/sections/Partner2';
 import Faqs1 from '@/components/sections/Faqs1';
 import Roadmap from '@/components/sections/Roadmap';
 import Tiersystem from '@/components/sections/Tiersystem';
-import Team2 from '@/components/sections/Team2';
+import Team from '@/components/sections/Team';
 
-import Project22 from '@/components/sections/Project22';
-import Technology from '@/components/sections/Technology';
-import Project23 from '@/components/sections/Project23';
-import Token2 from '@/components/sections/Token2';
+// import Project22 from '@/components/sections/Project22';
+// import Technology from '@/components/sections/Technology';
+// import Project23 from '@/components/sections/Project23';
+// import Token2 from '@/components/sections/Token2';
 export default function Home() {
   return (
     <>
@@ -30,14 +30,14 @@ export default function Home() {
           <Project23 />
             */}
           <Tiersystem />
-          <Feature2 />
+          <Feature />
           <Roadmap />
-          <Team2 />
+          <Team />
         </div>
         <Partner2 />
-        <Cta21 />
+        <Cta />
         <Faqs1 />
-        <Cta3 />
+        <Cta2 />
       </Layout>
     </>
   );

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Team2() {
+export default function Team() {
   return (
     <>
       <section className="tf-section tf_team">

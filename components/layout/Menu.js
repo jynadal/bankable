@@ -45,7 +45,7 @@ export default function Menu() {
             >
               <Link href="/primary-market">Primary</Link>
             </li>
-            <li
+            {/* <li
               className={`menu-item ${checkCurrentMenuItem(
                 '/secondary-market'
               )}`}
@@ -58,7 +58,7 @@ export default function Menu() {
               )}`}
             >
               <Link href="/project-details">Project Details</Link>
-            </li>
+            </li> */}
             <li
               className={`menu-item ${checkCurrentMenuItem('/submit-project')}`}
             >
@@ -120,7 +120,7 @@ export default function Menu() {
           </ul>
         </li> */}
 
-        <li
+        {/* <li
           className={`menu-item menu-item-has-children ${checkParentActive([
             '/blog',
             '/blog',
@@ -134,20 +134,17 @@ export default function Menu() {
             <li className={`menu-item ${checkCurrentMenuItem('/blog-grid')}`}>
               <Link href="/provider">Stockage</Link>
             </li>
-            {/* <li
-              className={`menu-item ${checkCurrentMenuItem('/blog-details')}`}
-            >
-              <Link href="/blog-details">Blog Detail</Link>
-            </li> */}
           </ul>
-        </li>
-        <li
+        </li> */}
+
+        {/* <li
           className={`menu-item ${
             pathname === '/roadmap' ? 'current-menu-item' : ''
           }`}
         >
           <Link href="/blog">Blog</Link>
-        </li>
+        </li> */}
+
         {/* <li
           className={`menu-item ${
             pathname === '/contact' ? 'current-menu-item' : ''

@@ -1,4 +1,4 @@
-export default function Feature2() {
+export default function Feature() {
   return (
     <>
       <section className="tf-section features">
