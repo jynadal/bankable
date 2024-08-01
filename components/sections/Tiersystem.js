@@ -66,7 +66,7 @@ export default function Tiersystem() {
 
             {/* Second Awesome Poster */}
             <div
-              className="col-lg-2 col-md-4"
+              className="col-lg-3 col-md-6"
               data-aos="fade-up"
               data-aos-duration={800}
             >
